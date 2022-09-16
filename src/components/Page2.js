@@ -1,6 +1,6 @@
-import Contents from "./Contents";
-import Footer from "./Footer";
-import Header from "./Header";
+import Contents from "./Page2Contents";
+import Footer from "./Page2Footer";
+import Header from "./Page2Header";
 
 function Page2() {
     return (

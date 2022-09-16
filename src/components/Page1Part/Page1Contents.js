@@ -64,13 +64,13 @@ function Page1Contents() {
                 <div className="twoBox">
                     <h2>Box2 Subject</h2>
                     {
-                        posts.map((card)=>{
+                        posts.map((data)=>{
                             return (
                                 <div className="twoBoxCard">
                                     <div className="cardImg"></div>
                                     <div className="cardText">
-                                        <h3 className="cardH3">{card.title}</h3>
-                                        <p className="cardP">{card.volume}</p>
+                                        <h3 className="cardH3">{data.title}</h3>
+                                        <p className="cardP">{data.volume}</p>
                                     </div>
                                 </div>
                             )
