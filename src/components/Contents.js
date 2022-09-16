@@ -102,6 +102,7 @@ const ContentsHeaderDiv = styled.div`
         ul {
             &::after {content:""; display:block; clear:both;}
             li {
+                cursor: pointer;
                 float: left;
                 width: 90px;
                 height: 40px;
@@ -124,10 +125,12 @@ const ContentsMainBox = styled.div`
     height: 700px;
     padding: 100px;
     .contentsMainImg {
+        cursor: pointer;
         margin-bottom: 20px;
         width: 100%;
         // 높이 가변
         /* height: 450px; */
+        // 분해 조립을 너무 마구잡이로 해놔서 실패함. 적당한 수준을 유지하며 짜야함.
         height: ${props=>props.log ? "450px" : "380px"};
         background-color: royalblue;
     }
@@ -137,6 +140,7 @@ const ContentsMainBox = styled.div`
         color: #999;
     }
     .boxSubject {
+        cursor: pointer;
         margin-bottom: 10px;
         text-align: left;
         color: #000;

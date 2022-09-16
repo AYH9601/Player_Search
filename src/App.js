@@ -1,14 +1,12 @@
 import './App.css';
-import Header from './components/Header';
-import Main from './components/Contents';
-import Footer from './components/Footer';
+import Page1 from './components/Page1';
+import Page2 from './components/Page2';
 
 function App() {
   return (
     <div className="App">
-      <Header></Header>
-      <Main></Main>
-      <Footer></Footer>
+      <Page1></Page1>
+      {/* <Page2></Page2> */}
     </div>
   );
 }
