@@ -77,7 +77,7 @@ function ConTentsSub() {
 export default Main;
 
 const Contents = styled.div`
-    padding: 30px;
+    /* padding: 30px; */
 `;
 
 const ContentsHeaderDiv = styled.div`
@@ -153,7 +153,9 @@ const ContentsMainBox = styled.div`
 `;
 
 const ContentsSubDiv = styled.div`
+    background-color: rgb(240,240,240);
     padding: 90px;
+
     h1 {
         text-align: left;
         font: bold 40px/1 "Lato";
