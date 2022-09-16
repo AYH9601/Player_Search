@@ -66,7 +66,7 @@ function Page1Contents() {
                     {
                         posts.map((data)=>{
                             return (
-                                <div className="twoBoxCard">
+                                <div className="twoBoxCard" key={data.id}>
                                     <div className="cardImg"></div>
                                     <div className="cardText">
                                         <h3 className="cardH3">{data.title}</h3>
