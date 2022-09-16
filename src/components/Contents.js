@@ -60,7 +60,7 @@ function ContentsBox() {
 
 function ConTentsSub() {
     return (
-        <ContentsSubDiv>
+        <ContentsSubDiv lots>
             <h1>ARCHIVE</h1>
             <div className="swiperSection">
                 <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
@@ -127,7 +127,8 @@ const ContentsMainBox = styled.div`
         margin-bottom: 20px;
         width: 100%;
         // 높이 가변
-        height: 450px;
+        /* height: 450px; */
+        height: ${props=>props.log ? "450px" : "380px"};
         background-color: royalblue;
     }
     .boxTag {
@@ -162,7 +163,8 @@ const ContentsSubDiv = styled.div`
         .swiper {
             width: 100%;
             height: 500px;
-            background-color: crimson;
+            /* background-color: crimson; */
+            background-color: ${props=>props.lots ? "royalblue" : "blue"};
             text-align: center;
             font: bold 20px/500px "Lato";
             color: #fff;

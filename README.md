@@ -1,2 +1,2 @@
-React Player
+React Player  
 Styled component 연습중...
