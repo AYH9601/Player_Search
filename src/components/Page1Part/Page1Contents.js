@@ -115,6 +115,7 @@ const Page1ContentsCSS = styled.div`
         }
     }
     .contentsBoxBot {
+
         margin-top: 200px;
         width: 100%;
         .oneBox {
@@ -143,6 +144,8 @@ const Page1ContentsCSS = styled.div`
         }
 
         .twoBox {
+            border-top: 1px solid rgb(230,230,230);
+            padding-top: 100px;
             h2 {
                 font: 40px/1 "Lato";
                 letter-spacing: 1px;
