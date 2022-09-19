@@ -21,7 +21,7 @@ const HeaderMain = styled.header`
     width: 100%;
     height: 100vh;
     line-height: 100vh;
-    background-color: beige;
+    background-color: #2C2C2C;
     overflow: hidden;
     position: relative;
 

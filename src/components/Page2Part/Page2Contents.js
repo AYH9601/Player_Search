@@ -132,7 +132,8 @@ const ContentsMainBox = styled.div`
         /* height: 450px; */
         // 분해 조립을 너무 마구잡이로 해놔서 실패함. 적당한 수준을 유지하며 짜야함.
         height: ${props=>props.log ? "450px" : "380px"};
-        background-color: royalblue;
+        background-color: #2C2C2C;
+        border-radius: 30px;
     }
     .boxTag {
         margin-bottom: 10px;
@@ -170,10 +171,11 @@ const ContentsSubDiv = styled.div`
             width: 100%;
             height: 500px;
             /* background-color: crimson; */
-            background-color: ${props=>props.lots ? "royalblue" : "blue"};
+            background-color: ${props=>props.lots ? "#2C2C2C" : "blue"};
             text-align: center;
             font: bold 20px/500px "Lato";
             color: #fff;
+            border-radius: 30px;
         }
     }
 `;
