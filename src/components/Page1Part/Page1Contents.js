@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import styled from "styled-components";
 import axios from "axios";
 import {useEffect,useState} from "react";
@@ -5,7 +7,7 @@ import {useEffect,useState} from "react";
 function Page1Contents() {
     let [posts,setPosts] = useState([]);
     const path = process.env.PUBLIC_URL;
-    const url = `${path}/dbs/card.json`
+    const url = `${path}/dbs/card.json`;
 
     useEffect(()=>{
         axios
@@ -14,6 +16,14 @@ function Page1Contents() {
                 setPosts(data.data.data);
             })
     },[]);
+
+    // 이스터에그...!
+    let [logoName, stateLogoName] = useState(["A","B","C","D","E","F","G","H"]);
+    function logoCounter(){
+        let copyLogoName = [...logoName];
+        copyLogoName[0] = "Hello.";
+        stateLogoName(copyLogoName);
+    };
 
     return (
         <Page1ContentsCSS>
@@ -36,31 +46,33 @@ function Page1Contents() {
                 <div className="oneBox">
                     <ul>
                         <li>
-                            <p>A</p>
+                            <p onClick={logoCounter}>{logoName[0]}</p>
                         </li>
                         <li>
-                            <p>B</p>
+                            <p>{logoName[1]}</p>
                         </li>
                         <li>
-                            <p>C</p>
+                            <p>{logoName[2]}</p>
                         </li>
                         <li>
-                            <p>D</p>
+                            <p>{logoName[3]}</p>
                         </li>
                         <li>
-                            <p>E</p>
+                            <p>{logoName[4]}</p>
                         </li>
                         <li>
-                            <p>F</p>
+                            <p>{logoName[5]}</p>
                         </li>
                         <li>
-                            <p>G</p>
+                            <p>{logoName[6]}</p>
                         </li>
                         <li>
-                            <p>H</p>
+                            <p>{logoName[7]}</p>
                         </li>
                     </ul>
                 </div>
+
+
                 <div className="twoBox">
                     <h2>Box2 Subject</h2>
                     {

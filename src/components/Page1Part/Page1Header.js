@@ -7,8 +7,10 @@ function Page1Header() {
                 <h1>NAME</h1>
             </div>
 
-            <div className="headerRight">
-                <div className="buttonBox">
+            <div className="headerRight toggle">
+                <div className="toggleLeft"></div>
+                <div className="toggleRight"></div>
+                <div className="buttonBox" id="tabPage">
                     <div className="buttonBoxIcon">
                         <div className="btnLineBox"></div>
                         <div className="btnLineBox"></div>
@@ -82,6 +84,28 @@ const Page1HeaderStyle = styled.header`
                 font: 20px/150px "Lato";
                 color: #2C2C2C;
             }
+        }
+    }
+
+    .toggle {
+        .toggleLeft {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 20%;
+            height: 100vh;
+            background-color: #2C2C2C;
+        }
+        
+        .toggleRight {
+            display: none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 80%;
+            height: 100vh;
+            background-color: #000;
         }
     }
 `;

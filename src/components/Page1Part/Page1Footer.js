@@ -9,7 +9,7 @@ function Page1Footer() {
                 <ul>
                     <li><Link to="/Page1" className="linkA">Page1</Link></li><br/>
                     <li><a href="/Page2">Page2</a></li><br/>
-                    <li><a href="https://github.com/AYH9601" target="_blank">GitHub</a></li>
+                    <li><a href="https://github.com/AYH9601" target="_blank" rel="noreferrer">GitHub</a></li>
                 </ul>                
             </div>
             <div className="footerBot">
@@ -40,10 +40,10 @@ padding: 30px 60px 30px 60px;
         li {
             display: inline-block;
             margin-bottom: 10px;
-            transition: 0.15s;
+            transition: 0.3s;
 
             &:hover {
-                transition: 0.15s;
+                transition: 0.3s;
                 border-right: 10px solid #fff;
                 transform: translateX(-10px);
             }
