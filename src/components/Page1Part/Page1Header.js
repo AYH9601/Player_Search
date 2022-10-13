@@ -1,21 +1,33 @@
 import styled from "styled-components";
 
 function Page1Header() {
+    function HeaderSilence() {
+        const header = document.querySelector(".page1Header")
+        const scroll = window.scrollY;
+        // header.style.color="crimson";
+        console.log(scroll)
+    } HeaderSilence();
+
+
+
+
     return (
         <Page1HeaderStyle>
-            <div className="headerLeft">
-                <h1>NAME</h1>
-            </div>
+            <div className="page1Header">
+                <div className="headerLeft">
+                    <h1>NAME</h1>
+                </div>
 
-            <div className="headerRight toggle">
-                <div className="toggleLeft"></div>
-                <div className="toggleRight"></div>
-                <div className="buttonBox" id="tabPage">
-                    <div className="buttonBoxIcon">
-                        <div className="btnLineBox"></div>
-                        <div className="btnLineBox"></div>
+                <div className="headerRight">
+                    <div className="toggleLeft"></div>
+                    <div className="toggleRight"></div>
+                    <div className="buttonBox" id="tabPage">
+                        <div className="buttonBoxIcon">
+                            <div className="btnLineBox"></div>
+                            <div className="btnLineBox"></div>
+                        </div>
+                        <h2>Menu</h2>
                     </div>
-                    <h2>Menu</h2>
                 </div>
             </div>
         </Page1HeaderStyle>

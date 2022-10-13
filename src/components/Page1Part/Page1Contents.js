@@ -89,6 +89,14 @@ function Page1Contents() {
                         })
                     }
                 </div>
+
+                <div className="threeBox">
+                    <h2>Box3 Subject</h2>
+                    <div className="threeBoxInner">
+                        <div className="threeBoxRight"></div>
+                        <div className="threeBoxLeft"></div>
+                    </div>
+                </div>
             </div>
         </Page1ContentsCSS>
     )
@@ -158,6 +166,8 @@ const Page1ContentsCSS = styled.div`
         .twoBox {
             border-top: 1px solid rgb(230,230,230);
             padding-top: 100px;
+            margin-bottom: 300px;
+
             h2 {
                 font: 40px/1 "Lato";
                 letter-spacing: 1px;
@@ -190,6 +200,35 @@ const Page1ContentsCSS = styled.div`
                         font: 20px/1 "Lato";
                         letter-spacing: 1px;
                     }
+                }
+            }
+        }
+
+        .threeBox {
+            h2 {
+                font: 40px/1 "Lato";
+                letter-spacing: 1px;
+                margin-bottom: 40px;
+            }
+
+            .threeBoxInner {
+                width: 100%;
+                height: 600px;
+                border-radius: 20px;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                overflow: hidden;
+
+                &::after {content:""; display:block; clear:both;}
+                .threeBoxLeft {
+                    width: 50%;
+                    height: 100%;
+                    float: left;
+                }
+                .threeBoxRight {
+                    width: 50%;
+                    height: 100%;
+                    float: right;
+                    background-color: #2C2C2C;
                 }
             }
         }

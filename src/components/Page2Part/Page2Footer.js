@@ -8,6 +8,7 @@ function Footer() {
                 <li>SEARCH Tech.</li>
                 <li>SEARCH ORBIT.</li>
                 <li>PORTAL. Inc</li>
+                <li><a href="/Page1">Page1</a></li><br/>
             </ul>
             <h2>&copy; SEARCH. Inc. All Rights Reserved</h2>
         </FooterBox>
@@ -33,6 +34,7 @@ const FooterBox = styled.footer`
         margin-bottom: 30px;
         &::after {content:""; display:block; clear:both;}
         li {
+            cursor: pointer;
             float: left;
             text-align: left;
             width: 150px;
@@ -47,6 +49,13 @@ const FooterBox = styled.footer`
             }
             &:last-child {
                 border-right: none;
+            }
+            a {
+                font: bold 15px/30px "Lato";
+                letter-spacing: 1px;
+                line-height: 30px;
+                color: #fff;
+                padding-left: 10px;
             }
         }
     }
