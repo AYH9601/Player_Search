@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 function Page1Header() {
     function HeaderSilence() {
-        const header = document.querySelector(".page1Header")
+        // const header = document.querySelector(".page1Header")
         const scroll = window.scrollY;
         // header.style.color="crimson";
         console.log(scroll)
