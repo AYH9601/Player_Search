@@ -10,7 +10,6 @@ function Page1Footer() {
                     <li><Link to="/Page1" className="linkA">Page1</Link></li><br/>
                     <li><a href="/Page2">Page2</a></li><br/>
                     <li><a href="/Page3">Page3</a></li><br/>
-                    <li><a href="https://github.com/AYH9601" target="_blank" rel="noreferrer">GitHub</a></li>
                 </ul>                
             </div>
             <div className="footerBot">
