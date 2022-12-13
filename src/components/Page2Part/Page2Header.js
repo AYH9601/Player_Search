@@ -7,7 +7,7 @@ function Header() {
                 {/* <source src="img/homepage-uhd.webm"/> */}
             </video>
             <div className="mainText">
-                <h1>SEARCH</h1>
+                <h1>SEARCH22</h1>
             </div>
         </HeaderMain>
     )
